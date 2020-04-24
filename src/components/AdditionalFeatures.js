@@ -1,4 +1,7 @@
+
 import React from 'react';
+import { connect } from 'react-redux';
+
 import AdditionalFeature from './AdditionalFeature';
 
 const AdditionalFeatures = props => {
@@ -18,4 +21,4 @@ const AdditionalFeatures = props => {
   );
 };
 
-export default AdditionalFeatures;
+export default connect(null, {})(AdditionalFeatures); // Connected AdditionalFeatures to the store
