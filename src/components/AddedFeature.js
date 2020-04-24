@@ -8,7 +8,8 @@ const AddedFeature = props => {
       <button className="button">X</button>
       {props.feature.name}
     </li>
-  );
+  )
 };
+
 
 export default connect(null, {})(AddedFeature); // Connected AddedFeature to the store

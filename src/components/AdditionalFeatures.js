@@ -18,7 +18,13 @@ const AdditionalFeatures = props => {
         <p>Nice looking car!</p>
       )}
     </div>
-  );
+  )
 };
 
-export default connect(null, {})(AdditionalFeatures); // Connected AdditionalFeatures to the store
+const mapStateToProps = state => {
+  return {
+    additionalFeatures: state.additionalFeatures
+  }
+};
+
+export default connect(mapStateToProps, {})(AdditionalFeatures); // Connected AdditionalFeatures to the store
